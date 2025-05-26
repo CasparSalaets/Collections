@@ -1,8 +1,11 @@
 package collections;
 
-public class LinkedList implements List {
+import java.util.Iterator;
 
-	private class Node {
+@SuppressWarnings("rawtypes")
+public class LinkedList implements List, Iterable {
+
+	class Node {
 		/**
 		 * @invar | (element == null) == (this == sentinel)
 		 * @invar | previous != null
@@ -15,7 +18,7 @@ public class LinkedList implements List {
 		private Node previous;
 		private Object element;
 		/** @peerObject */
-		private Node next;
+		Node next;
 		
 		private int getLength() { return this == sentinel ? 0 : 1 + next.getLength(); }
 	}
@@ -26,7 +29,7 @@ public class LinkedList implements List {
 	 */
 	private int size;
 	/** @representationObject */
-	private Node sentinel;
+	Node sentinel;
 	
 	private Node getNode(int index) {
 		Node node = sentinel;
@@ -103,5 +106,7 @@ public class LinkedList implements List {
 			node = node.next;
 		}
 	}
+	
+	public Iterator iterator() { return new LinkedListIterator(this); }
 
 }

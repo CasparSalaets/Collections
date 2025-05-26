@@ -1,8 +1,10 @@
 package collections;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
-public class ArrayList implements List {
+@SuppressWarnings("rawtypes")
+public class ArrayList implements List, Iterable {
 
 	/**
 	 * @invar | elements != null
@@ -12,8 +14,8 @@ public class ArrayList implements List {
 	 * @invar | Arrays.stream(elements, size, elements.length)
 	 * 		  | 		.allMatch(e -> e == null)
 	 */
-	private Object[] elements = new Object[10];
-	private int size;
+	Object[] elements = new Object[10];
+	int size;
 	
 	/**
 	 * @post | size() == 0
@@ -59,4 +61,6 @@ public class ArrayList implements List {
 		if (index != -1)
 			remove(index);
 	}
+	
+	public Iterator iterator() { return new ArrayListIterator(this); }
 }
