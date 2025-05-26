@@ -2,6 +2,7 @@ package collections;
 
 import java.util.Iterator;
 
+@SuppressWarnings("rawtypes")
 public class LinkedListIterator implements Iterator {
 
 	public LinkedList.Node node;

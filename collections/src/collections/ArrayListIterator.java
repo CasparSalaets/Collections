@@ -2,6 +2,7 @@ package collections;
 
 import java.util.Iterator;
 
+@SuppressWarnings("rawtypes")
 public class ArrayListIterator implements Iterator {
 		
 	public ArrayList arrayList;
