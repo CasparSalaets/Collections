@@ -16,6 +16,7 @@ This repository contains a custom implementation of core data structures and col
 - ✅ Sample usage in `ClientProgram.java`
 
 ## Project Structure
+```
 collections/
 │
 ├── src/
@@ -35,4 +36,4 @@ collections/
 │ └── Set.java
 │
 └── README.md
-
+```
