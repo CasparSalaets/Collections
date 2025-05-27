@@ -37,3 +37,7 @@ collections/
 │
 └── README.md
 ```
+## References
+
+- [OGP Notes by Bart Jacobs](https://github.com/btj/ogp-notes) – Referenced for design ideas and implementation strategies.
+
