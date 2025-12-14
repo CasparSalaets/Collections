@@ -4,16 +4,16 @@ This repository contains a custom implementation of core data structures and col
 
 ## Features
 
-- ✅ Custom implementations of common collection types:
+- Custom implementations of common collection types:
   - `ArrayList`, `LinkedList`
   - `HashSet`, `ArraySet`
   - `HashMap`, `ArrayMap`
-- ✅ Custom iterator implementations for array and linked list:
+- Custom iterator implementations for array and linked list:
   - `ArrayListIterator`
   - `LinkedListIterator`
-- ✅ Shared interfaces to ensure consistency and reusability:
+- Shared interfaces to ensure consistency and reusability:
   - `Iterable`, `List`, `Map`, `Set`
-- ✅ Sample usage in `ClientProgram.java`
+- Sample usage in `ClientProgram.java`
 
 ## Project Structure
 ```
